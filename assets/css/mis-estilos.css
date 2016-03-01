@@ -1,0 +1,18 @@
+/*Importarcion de estilos google fonts*/
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+
+body{
+font-family: 'Merriweather', serif;/*Llamada de estilo*/
+
+background-color: #1B334E;
+
+color: #FFFFFF;
+}
+
+
+
+h1
+{
+	font-size: 50px;
+}

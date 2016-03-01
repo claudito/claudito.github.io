@@ -1,2 +1,2 @@
 # claudito.github.io
-repositorio de prueba
+Este es mi repositorio publico de github
