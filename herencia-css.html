@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Herencia</title>
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<style type="text/css">
+
+#caja header h1{color:blue;}  /*estilo1*/
+ 
+#caja .cabecera h1{color:lime;} /* estilo2 */
+
+h1{color:purple;} /* estilo3 */
+
+h1{color:grey;}  /* estilo4 */
+
+</style>
+
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			
+
+<div id="caja">
+
+<header class="cabecera">
+<h1>Cabecera: header</h1>
+</header>
+
+</div>
+
+<div class="table-responsive">
+
+<table class="table table-responsive table-bordered">
+<thead>
+<tr>
+<tr>
+<th rowspan="2">Puntación</th>
+<th colspan="4" style="text-align: center;">Estilos</th>
+</tr>
+</tr>
+<tr>
+<th><code>#caja header h1{color:blue;}</code></th>
+<th><code>#caja .cabecera h1{color:lime;}</code></th>
+<th><code>h1{color:purple;} </code></th>
+<th><code>h1{color:grey;} </code></th>
+</tr>
+</thead>
+<tbody>
+<tr class="active">
+<td>A = Estilos en linea</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="active">
+<td>B = ID </td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="active">
+<td>C = clases</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="active">
+<td>D = Elemento</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr class="active">
+<td>Resultado</td>
+<td>0102</td>
+<td class="info">0111 (Ganador) </td>
+<td>0001</td>
+<td>0001</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
