@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Capturar Coordenadas</title>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title">Capturar Coordenadas</h3>
+	</div>
+	<div class="panel-body">
+
+    <div id="mensaje"></div>
+
+    <form id="grabar" class="form-inline">
+    
+    <select name="cliente" id="" class="form-control" required="">
+    <option value="">[Seleccionar]</option>
+    <option value="1">Cliente #1</option>
+    <option value="2">Cliente #2</option>
+    </select>
+	<input type="text" name="latitude" id="latitude"  class="form-control" required="">
+	<input type="text" name="longitude" id="longitude" class="form-control" required="">
+  	
+     <button class="btn btn-primary">Grabar</button>
+
+    </form>
+
+    
+
+	</div>
+	<div class="panel-footer"><a href="https://developer.mozilla.org/es/docs/WebAPI/Using_geolocation" target="_blank">documentación</a></div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="app.js"></script>
+<script>
+function geoFindMe() {
+  var output = document.getElementById("out");
+
+  function success(position) {
+    var latitude  = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    $('#latitude').val(latitude);
+    $('#longitude').val(longitude);
+
+  };
+
+  navigator.geolocation.getCurrentPosition(success);
+}
+
+geoFindMe();
+
+</script>
+</body>
+</html>
